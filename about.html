@@ -13,6 +13,7 @@
     <!-- Favicon Icon -->
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
     <!-- Google Fonts Css-->
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
@@ -682,7 +683,8 @@
                                 benefits every step of the way</p>
 
                             <div class="about-button" style="margin-top: 20px;">
-                                <a href="#" class="btn-default">Learn More</a>
+                                <a onclick="Calendly.initPopupWidget({url: 'https://calendly.com/watersmithcpa/30min'});return false;"
+                                    style="cursor: pointer;" class="btn-default">Learn More</a>
                             </div>
                         </div>
                     </div>
@@ -701,7 +703,8 @@
                                 your financial success</p>
 
                             <div class="about-button" style="margin-top: 20px;">
-                                <a href="#" class="btn-default">Learn More</a>
+                                <a onclick="Calendly.initPopupWidget({url: 'https://calendly.com/watersmithcpa/30min'});return false;"
+                                    style="cursor: pointer;" class="btn-default">Learn More</a>
                             </div>
                         </div>
                     </div>
@@ -720,7 +723,8 @@
                                 expert and ethical support every step of the way.</p>
 
                             <div class="about-button" style="margin-top: 20px;">
-                                <a href="#" class="btn-default">Learn More</a>
+                                <a onclick="Calendly.initPopupWidget({url: 'https://calendly.com/watersmithcpa/30min'});return false;"
+                                    style="cursor: pointer;" class="btn-default">Learn More</a>
                             </div>
                         </div>
                     </div>
@@ -798,7 +802,8 @@
                         needs.
                     </p>
                     <div class="section-btn wow fadeInUp" data-wow-delay="0.25s">
-                        <a href="#" class="btn-default btn-highlighted">get started now</a>
+                        <a onclick="Calendly.initPopupWidget({url: 'https://calendly.com/watersmithcpa/30min'});return false;"
+                            style="cursor: pointer;" class="btn-default btn-highlighted">get started now</a>
                     </div>
                     <!-- Section Title End -->
                 </div>
@@ -915,6 +920,8 @@
             });
         });
     </script>
+
+    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
 
     <!-- Jquery Library File -->
     <script src="js/jquery-3.7.1.min.js"></script>

@@ -13,6 +13,7 @@
     <!-- Favicon Icon -->
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
     <!-- Google Fonts Css-->
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
@@ -283,7 +284,8 @@
 
                         <!-- Employee Footer Start -->
                         <div class="" style="margin-bottom: 10px;">
-                            <a href="#" class="btn-default btn-highlighted">Learn More</a>
+                            <a onclick="Calendly.initPopupWidget({url: 'https://calendly.com/watersmithcpa/30min'});return false;"
+                                style="cursor: pointer;" class="btn-default btn-highlighted">Learn More</a>
                         </div>
                         <!-- Employee Footer End -->
                     </div>
@@ -327,7 +329,8 @@
 
                         <!-- Employee Footer Start -->
                         <div class="" style="margin-bottom: 10px;">
-                            <a href="#" class="btn-default btn-highlighted">Learn More</a>
+                            <a onclick="Calendly.initPopupWidget({url: 'https://calendly.com/watersmithcpa/30min'});return false;"
+                                style="cursor: pointer;" class="btn-default btn-highlighted">Learn More</a>
                         </div>
                         <!-- Employee Footer End -->
                     </div>
@@ -389,7 +392,8 @@
 
                         <!-- Employee Footer Start -->
                         <div class="" style="margin-bottom: 10px;">
-                            <a href="#" class="btn-default btn-highlighted">Learn More</a>
+                            <a onclick="Calendly.initPopupWidget({url: 'https://calendly.com/watersmithcpa/30min'});return false;"
+                                style="cursor: pointer;" class="btn-default btn-highlighted">Learn More</a>
                         </div>
                         <!-- Employee Footer End -->
                     </div>
@@ -473,6 +477,8 @@
         </div>
     </footer>
     <!-- Footer End -->
+
+    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
 
     <!-- Jquery Library File -->
     <script src="js/jquery-3.7.1.min.js"></script>
