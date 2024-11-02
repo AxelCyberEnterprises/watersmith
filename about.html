@@ -98,6 +98,79 @@
             margin-bottom: 10px;
         }
 
+        /* Info Icon */
+        .post-item-body {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-align: left;
+        }
+
+        .post-info {
+            flex: 1;
+            margin-left: 20px;
+        }
+
+        .info-icon {
+            background: none;
+            border: none;
+            font-size: 1.2em;
+            cursor: pointer;
+            color: #005b50;
+            margin-right: 20px;
+        }
+
+        /* Modal Styles */
+        .modal {
+            display: none;
+            /* Hidden by default */
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            /* Semi-transparent background */
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+        }
+
+        .modal-content {
+            background-color: #005b50;
+            color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            width: 80%;
+            max-width: 600px;
+            text-align: center;
+            position: relative;
+        }
+
+        .close-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 1.5em;
+            cursor: pointer;
+            color: #ffffff;
+        }
+
+        @media (max-width: 480px) {
+            .modal-content {
+                width: 90%;
+                /* Even smaller width for extra small screens */
+                padding: 10px;
+                font-size: 14px;
+                /* Smaller font size */
+            }
+
+            .close-btn {
+                font-size: 20px;
+                /* Adjust close button size */
+            }
+        }
+
         @keyframes fallFromTop {
             0% {
                 transform: translateY(-100px);
@@ -462,7 +535,216 @@
     <!-- Our Employee Section End -->
 
     <!-- Our blog Section start -->
+    <div class="our-blog">
+        <div class="container">
+            <div class="row section-row align-items-center">
+                <div class="col-lg-12 text-center">
+                    <!-- Section Title Start -->
+                    <div class="section-title">
+                        <!-- <h3 class="wow fadeInUp">our blog</h3> -->
+                        <h2 class="text-anime-style-3">Meet The Team</h2>
+                    </div>
+                    <!-- Section Title End -->
+                </div>
+            </div>
 
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-12">
+                    <!-- Blog Item Start -->
+                    <div class="blog-item wow fadeInUp" data-wow-delay="0.25s">
+                        <!-- Post Featured Image Start -->
+                        <div class="post-featured-image">
+                            <figure class="image-anime">
+                                <a href="#"><img src="images/tunji.jpg" alt=""></a>
+                            </figure>
+                        </div>
+                        <!-- Post Featured Image End -->
+
+                        <!-- Post Item Body Start -->
+                        <div class="post-item-body">
+                            <div class="post-info">
+                                <h4 style="color:#005b50">Tunji
+                                    (TJ) Adeniran</h4>
+                                <p>MD Watersmith Group</p>
+                            </div>
+                            <!-- Info Icon -->
+                            <button class="info-icon" onclick="openModal('summaryModal')">
+                                <i class="fa-solid fa-circle-info"></i>
+                            </button>
+                        </div>
+                        <!-- Post Item Body End -->
+
+                        <!-- Modal for Summary -->
+                        <div id="summaryModal" class="modal">
+                            <div class="modal-content">
+                                <span class="close-btn" onclick="closeModal('summaryModal')">&times;</span>
+                                <p> I Tunji (TJ) Adenira has over 20 years of expertise in accounting, Tax services,
+                                    financial advisory and business management. He holds a bachelors degree in applied
+                                    accounting from Oxford bookies University (UK) and a masters degree in Accounting
+                                    and finance from Brock university (Canada) . Tunji is a chattered professional
+                                    Accountant (CPA) in Canada, a chattered fiancial analyst (CFA) in the US, and holds
+                                    chattered Accountant (CA) designations in both UK and Nigeria ,
+                                    Tunji is dedicated to delivering experts solutions that meet the unique financial
+                                    needs of individuals and business alike. I Tunji (TJ) Adenira has over 20 years of
+                                    expertise in accounting, Tax services, financial advisory and business management.
+                                    He holds a bachelors degree in applied accounting from Oxford bookies University
+                                    (UK) and a masters degree in Accounting and finance from Brock university (Canada) .
+                                    Tunji is a chattered professional Accountant (CPA) in Canada, a chattered fiancial
+                                    analyst (CFA) in the US, and holds chattered Accountant (CA) designations in both UK
+                                    and Nigeria ,
+                                    Tunji is dedicated to delivering experts solutions that meet the unique financial
+                                    needs of individuals and business alike.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Blog Item End -->
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+                    <!-- Blog Item Start -->
+                    <div class="blog-item wow fadeInUp" data-wow-delay="0.25s">
+                        <!-- Post Featured Image Start -->
+                        <div class="post-featured-image">
+                            <figure class="image-anime">
+                                <a href="#"><img src="images/sandy.jpeg" alt=""></a>
+                            </figure>
+                        </div>
+                        <!-- Post Featured Image End -->
+
+                        <!-- Post Item Body Start -->
+                        <div class="post-item-body">
+                            <div class="post-info">
+                                <h4 style="color:#005b50">Sandy MacInnis</h4>
+                                <p>Senior Accountant</p>
+                            </div>
+                            <!-- Info Icon -->
+                            <button class="info-icon" onclick="openModal('summaryModal2')">
+                                <i class="fa-solid fa-circle-info"></i>
+                            </button>
+                        </div>
+                        <!-- Post Item Body End -->
+
+                        <!-- Modal for Summary -->
+                        <div id="summaryModal2" class="modal">
+                            <div class="modal-content">
+                                <span class="close-btn" onclick="closeModal('summaryModal2')">&times;</span>
+                                <p> With over 20 years of experience in bookkeeping, tax filing, and accounting
+                                    services, Sandy MacInnis brings a wealth of expertise to the team. She holds a
+                                    college diploma in business and has spent more than 9 years at Doug Streeter
+                                    Professional Service, where she specialized in bookkeeping, handling T1 personal tax
+                                    returns. Sandy also has extensive experience managing compilation engagements,
+                                    ensuring accurate and timely financial reports for businesses.
+
+                                    Sandy is highly knowledgeable in navigating the Canada Revenue Agency (CRA)
+                                    processes, providing clients with seamless support in tax filings, audits, and
+                                    compliance issues. Her in-depth knowledge of the local economy in and around Hanover
+                                    makes her a valuable resource for businesses and individuals seeking expert,
+                                    personalized financial solutions.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Blog Item End -->
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+                    <!-- Blog Item Start -->
+                    <div class="blog-item wow fadeInUp" data-wow-delay="0.25s">
+                        <!-- Post Featured Image Start -->
+                        <div class="post-featured-image">
+                            <figure class="image-anime">
+                                <a href="#"><img src="images/michelle.jpeg" alt=""></a>
+                            </figure>
+                        </div>
+                        <!-- Post Featured Image End -->
+
+                        <!-- Post Item Body Start -->
+                        <div class="post-item-body">
+                            <div class="post-info">
+                                <h4 style="color:#005b50">Michelle Weber</h4>
+                                <p>Bookkeeper/Accountant</p>
+                            </div>
+                            <!-- Info Icon -->
+                            <button class="info-icon" onclick="openModal('summaryModal3')">
+                                <i class="fa-solid fa-circle-info"></i>
+                            </button>
+                        </div>
+                        <!-- Post Item Body End -->
+
+                        <!-- Modal for Summary -->
+                        <div id="summaryModal3" class="modal">
+                            <div class="modal-content">
+                                <span class="close-btn" onclick="closeModal('summaryModal3')">&times;</span>
+                                <p>Michelle Weber is a highly skilled accounting assistant with over 5 years of
+                                    experience in financial reporting, tax planning, and audit support. She holds a
+                                    Bachelor’s degree in Business focusing on Accounting and has a deep understanding of
+                                    financial management and personal tax strategies. Michelle has worked extensively
+                                    with small to medium-sized businesses, providing tailored accounting solutions and
+                                    ensuring compliance with Canadian tax laws.
+
+                                    In her current role, Michelle specialized in personal tax filings, HST returns, and
+                                    led multiple financial strategy projects. Her expertise extends to payroll
+                                    management, financial forecasting, and quarterly reporting. Michelle is also
+                                    experienced in CRA negotiations, offering clients reliable guidance through audits
+                                    and reviews.
+
+                                    With a strong focus on building long-term relationships, Michelle is committed to
+                                    helping businesses optimize their financial performance while maintaining compliance
+                                    with ever-changing regulations.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Blog Item End -->
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+                    <!-- Blog Item Start -->
+                    <div class="blog-item wow fadeInUp" data-wow-delay="0.25s">
+                        <!-- Post Featured Image Start -->
+                        <div class="post-featured-image">
+                            <figure class="image-anime">
+                                <a href="#"><img src="images/doug.jpeg" alt=""></a>
+                            </figure>
+                        </div>
+                        <!-- Post Featured Image End -->
+
+                        <!-- Post Item Body Start -->
+                        <div class="post-item-body">
+                            <div class="post-info">
+                                <h4 style="color:#005b50">Doug Streeter</h4>
+                                <p>Managing Partner</p>
+                            </div>
+                            <!-- Info Icon -->
+                            <button class="info-icon" onclick="openModal('summaryModal4')">
+                                <i class="fa-solid fa-circle-info"></i>
+                            </button>
+                        </div>
+                        <!-- Post Item Body End -->
+
+                        <!-- Modal for Summary -->
+                        <div id="summaryModal4" class="modal">
+                            <div class="modal-content">
+                                <span class="close-btn" onclick="closeModal('summaryModal4')">&times;</span>
+                                <p> With over four decades of accounting and bookkeeping experience, Doug Streeter is a
+                                    highly seasoned Chartered Professional Accountant (CPA) in Ontario. His career spans
+                                    from leading finance units in large Canadian corporations to establishing and
+                                    managing his own bookkeeping and accounting firm in Ontario for nearly 20 years.
+                                    Doug’s expertise covers a wide range of services, including compilation engagements,
+                                    HST filings, T2 corporate tax returns, T3 trust returns, and consulting.
+
+                                    He also provides strategic financial advice and handles business restructuring
+                                    projects for both individuals and businesses. As a CPA in good standing with CPA
+                                    Ontario, Doug is dedicated to delivering personalized, high-quality accounting
+                                    services to his clients.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Blog Item End -->
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- Our blog Section End -->
 
     <!-- Why Choose Us Section Start -->
@@ -585,10 +867,10 @@
                                 offer scalable solutions through add-ons and applications, custom-tailored to meet your
                                 specific needs. 
                             </h4>
-                            <!-- <h5 style="margin-top: 10px;">
-                                Emily Rogers
+                            <h5 style="margin-top: 10px;">
+                                Tunji (TJ) Adeniran
                             </h5>
-                            <p>CEO at GreenLeaf Marketing</p> -->
+                            <p>MD Watersmith Group</p>
                         </div>
                         <!-- Employee Body End -->
                     </div>
@@ -735,6 +1017,32 @@
                 observer.observe(wrapper);
             });
         });
+
+        // Function to open the modal
+        function openModal(modalId) {
+            const modal = document.getElementById(modalId);
+            if (modal) {
+                modal.style.display = "flex";
+            }
+        }
+
+        // Function to close the modal
+        function closeModal(modalId) {
+            const modal = document.getElementById(modalId);
+            if (modal) {
+                modal.style.display = "none";
+            }
+        }
+
+        // Close modal when clicking outside the modal content
+        window.onclick = function (event) {
+            const modals = document.querySelectorAll(".modal");
+            modals.forEach(modal => {
+                if (event.target === modal) {
+                    modal.style.display = "none";
+                }
+            });
+        }
     </script>
 
     <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
